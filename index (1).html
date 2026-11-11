@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital: Guia Prático</title>
+    <style>
+        /* Variáveis de Design para Acessibilidade */
+        :root {
+            --primary-color: #004a99;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ffc107;
+            --text-color: #212529;
+            --bg-color: #ffffff;
+            --font-size-base: 20px;
+            /* Fonte maior para facilitar a leitura */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding-bottom: 50px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Cartões de Conteúdo */
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 10px solid var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+        }
+
+        .card h2 span {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+
+        /* Lista de Dicas */
+        .tips-list {
+            list-style: none;
+        }
+
+        .tips-list li {
+            background: #eef2f7;
+            margin-bottom: 12px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+        }
+
+        .tips-list li strong {
+            display: block;
+            color: #d32f2f;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        /* Destaque Importante */
+        .warning {
+            background-color: #fff3cd;
+            border: 2px solid #ffeeba;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        /* Rodapé de Navegação */
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            overflow-x: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: var(--primary-color);
+            color: white;
+            outline: 3px solid var(--accent-color);
+        }
+
+        /* Botão de Emergência */
+        .sos-button {
+            display: block;
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            box-shadow: 0 4px 0 #8e1a1a;
+        }
+
+        .sos-button:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card h2 {
+                font-size: 1.4rem;
+            }
+
+            body {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Segurança na Internet</h1>
+        <p>Aprenda a se proteger de forma simples e segura.</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <a href="#senhas">Senhas</a>
+        <a href="#mensagens">Mensagens</a>
+        <a href="#links">Links</a>
+        <a href="#ajuda">Pedir Ajuda</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="senhas" class="card">
+            <h2><span>🔑</span> Senhas Fortes</h2>
+            <p>A sua senha é como a chave da sua casa. Ela precisa ser difícil de adivinhar.</p>
+            <ul class="tips-list">
+                <li><strong>Não use:</strong> Datas de nascimento, nomes de netos ou "123456".</li>
+                <li><strong>Dica de Ouro:</strong> Use uma frase que você gosta, como "CafeComPaoEBom2024!". É fácil de
+                    lembrar e difícil de hackear.</li>
+                <li><strong>Segredo:</strong> Nunca anote a senha no verso do cartão ou em papéis perto do computador.
+                </li>
+            </ul>
+        </section>
+
+        <section id="mensagens" class="card">
+            <h2><span>📱</span> Cuidado no WhatsApp</h2>
+            <p>Golpistas fingem ser pessoas conhecidas para pedir dinheiro.</p>
+            <div class="warning">
+                <strong>ATENÇÃO:</strong> Se um filho ou neto pedir dinheiro por um número novo, ligue para o número
+                antigo dele antes de fazer qualquer coisa!
+            </div>
+            <ul class="tips-list">
+                <li>Nunca envie códigos que chegarem por SMS para ninguém.</li>
+                <li>Ative a "Confirmação em duas etapas" nas configurações do seu WhatsApp.</li>
+            </ul>
+        </section>
+
+        <section id="links" class="card">
+            <h2><span>🖱️</span> Onde Clicar?</h2>
+            <p>Muitas vezes recebemos promoções falsas ou avisos de bancos por e-mail.</p>
+            <ul class="tips-list">
+                <li><strong>Promoções exageradas:</strong> Se o preço está barato demais para ser verdade, provavelmente
+                    é golpe.</li>
+                <li><strong>Bancos:</strong> O banco nunca pede sua senha por e-mail ou telefone. Na dúvida, vá até a
+                    agência ou use o aplicativo oficial.</li>
+            </ul>
+        </section>
+
+        <section id="ajuda" class="card">
+            <h2><span>🤝</span> Não tenha vergonha</h2>
+            <p>A internet muda rápido. Se sentir algo estranho ou não souber como fazer, peça ajuda para alguém de
+                confiança.</p>
+
+            <a href="#" class="sos-button">Fui Vítima de um Golpe? Clique Aqui</a>
+
+            <p style="margin-top: 20px; text-align: center; font-style: italic;">
+                Ligue para o 190 se precisar falar com a polícia sobre crimes cibernéticos.
+            </p>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; padding: 20px; color: #666; font-size: 0.9rem;">
+        &copy; 2024 Guia de Segurança para a Terceira Idade - Acesso para Todos.
+    </footer>
+
+</body>
+
+</html>
